@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/images/netflix.png">
 </head>
 <body>
+    <div class="nav" id="nav">
+        <img src="images/netflix-logo.png" alt="" class="nav__logo">
+        <img src="images/netflix-avatar.png" alt="" class="nav__avatar">
+    </div>
     <div class="banner">
         <div class="banner__contents">
             <h1 class="banner__title">Breaking Bad</h1>
@@ -16,13 +21,13 @@
             </div>
 
             <div class="banner__description">
-                gdgfdhgfhdfhdfg
+                Breaking Bad is an American crime drama television series created and produced by Vince Gilligan for AMC. Set and filmed in Albuquerque, New Mexico, the series follows Walter White
             </div>
 
-            <div class="bottom__fadeout"></div>
+        
 
         </div>
-
+        <div class="bottom__fadeout"></div>
     </div>
     <div class="row">
         <h2>NETFLIX ORIGINALS</h2>
@@ -45,7 +50,7 @@
         </div>
     </div>
     <div class="row">
-        <h2>NETFLIX ORIGINALS</h2>
+        <h2>Trending Now</h2>
         <div class="row__posters">
             <img src="images/small-movie1.jpg" class="row__poster" alt="" srcset="">
             <img src="images/small-movie2.jpg" class="row__poster" alt="" srcset="">
@@ -65,7 +70,7 @@
         </div>
     </div>
     <div class="row">
-        <h2>NETFLIX ORIGINALS</h2>
+        <h2>Top Rated</h2>
         <div class="row__posters">
          
             <img src="images/small-movie8.jpg" class="row__poster" alt="" srcset="">
@@ -87,7 +92,7 @@
     </div>
 
     <div class="row">
-        <h2>NETFLIX ORIGINALS</h2>
+        <h2>Action Movies</h2>
         <div class="row__posters">
             <img src="images/small-movie3.jpg" class="row__poster" alt="" srcset="">
             <img src="images/small-movie4.jpg" class="row__poster" alt="" srcset="">
@@ -107,5 +112,39 @@
             <img src="images/small-movie7.jpg" class="row__poster" alt="" srcset="">
         </div>
     </div>
+
+    <div class="row">
+        <h2>Comedy Movies</h2>
+        <div class="row__posters">
+            <img src="images/small-movie3.jpg" class="row__poster" alt="" srcset="">
+            <img src="images/small-movie4.jpg" class="row__poster" alt="" srcset="">
+            <img src="images/small-movie5.jpg" class="row__poster" alt="" srcset="">
+        
+            
+            <img src="images/small-movie4.jpg" class="row__poster" alt="" srcset="">
+            <img src="images/small-movie5.jpg" class="row__poster" alt="" srcset="">
+            <img src="images/small-movie6.jpg" class="row__poster" alt="" srcset="">
+            <img src="images/small-movie7.jpg" class="row__poster" alt="" srcset="">
+            <img src="images/small-movie6.jpg" class="row__poster" alt="" srcset="">
+            <img src="images/small-movie7.jpg" class="row__poster" alt="" srcset="">
+            <img src="images/small-movie1.jpg" class="row__poster" alt="" srcset="">
+            <img src="images/small-movie2.jpg" class="row__poster" alt="" srcset="">
+            <img src="images/small-movie3.jpg" class="row__poster" alt="" srcset="">
+            <img src="images/small-movie8.jpg" class="row__poster" alt="" srcset="">
+            <img src="images/small-movie1.jpg" class="row__poster" alt="" srcset="">
+            <img src="images/small-movie2.jpg" class="row__poster" alt="" srcset="">
+        </div>
+    </div>
+    <script>
+        const nav =document.getElementById('nav')
+        window.addEventListener('scroll',()=>{
+            if(window.scrollY>=100){
+                nav.classList.add('nav__black')
+            }
+            else{
+                nav.classList.remove('nav__black')
+            }
+        })
+    </script>
 </body>
 </html>
